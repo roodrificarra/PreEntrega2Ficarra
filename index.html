@@ -38,35 +38,56 @@
   <body>
     <!-- HEADER -->
     <header>
-      <div class="header--container">
-        <nav id="nav__menu">
-          <ul class="nav__list">
-            <li>
-              <a href="index.html"
-                ><img src="Imagenes/logoipsum-247.svg" alt=""
-              /></a>
-              <a class="span--green nav__link" href="index.html">Inicio</a>
-            </li>
-            <li>
-              <a class="span--yellow nav__link" href="nosotros.html"
-                >Nosotros</a
+      <div class="bg-dark">
+        <div class="container">
+          <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
               >
-            </li>
-            <li>
-              <a class="span--green nav__link" href="cursos.html">Cursos</a>
-            </li>
-            <li>
-              <a class="span--yellow nav__link" href="novedades.html"
-                >Novedades</a
-              >
-            </li>
-            <li>
-              <a class="span--green nav__link" href="contactanos.html"
-                >Contáctanos</a
-              >
-            </li>
-          </ul>
-        </nav>
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-center">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link span--green"
+                      aria-current="page"
+                      href="index.html"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link span--yellow" href="nosotros.html"
+                      >Nosotros</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link span--green" href="cursos.html"
+                      >Cursos</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link span--yellow" href="novedades.html"
+                      >Novedades</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link span--green" href="contactanos.html"
+                      >Contáctanos</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <!-- MAIN -->
@@ -107,21 +128,22 @@
     </main>
     <!-- FOOTER -->
     <footer>
-      <div class="footer__main">
-        ¡Seguinos en nuestras redes sociales!
-
-        <ul class="footer__list">
-          <li>
-            <a href="https://www.instagram.com/instituto__kandel/"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/profile.php?id=100086278759011"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </li>
-        </ul>
+      <div class="footer__main row">
+        <p class="footer__text">¡Seguinos en nuestras redes sociales!</p>
+        <div class="row">
+          <ul class="footer__list">
+            <li>
+              <a href="https://www.instagram.com/instituto__kandel/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100086278759011"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <!-- SCRIPT  -->
