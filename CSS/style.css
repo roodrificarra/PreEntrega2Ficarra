@@ -67,6 +67,22 @@ body {
   margin-left: 5rem;
 }
 
+.text-font {
+  font-family: "Noto Sans Mono", monospace;
+  font-style: italic;
+}
+
+.main-title {
+  color: white;
+  padding: 3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  justify-content: center;
+  margin-top: 1rem;
+  text-align: center;
+}
 .span--green {
   color: green;
 }
@@ -164,8 +180,34 @@ main {
   color: red;
 }
 
+.card {
+  border-radius: 30px;
+  height: 30rem;
+}
+
+.card__image {
+  height: 15rem;
+}
+
 .span-blue {
   color: blue;
+}
+
+.main__text--c {
+  font-family: "Noto Sans Mono", monospace;
+  font-style: italic;
+  color: white;
+  margin: 2rem;
+  line-height: 4rem;
+}
+
+.btn {
+  background-color: green;
+  color: yellow;
+}
+
+.btn:hover {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
@@ -247,7 +289,5 @@ main {
 
   .iframe {
     margin-left: 5rem;
-  }
-  .aside {
   }
 }
