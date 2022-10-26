@@ -18,13 +18,38 @@ body {
   background-position: center;
 }
 
+.aqui:hover {
+  cursor: pointer;
+}
+
+.main__text-colectivos {
+  font-family: "Noto Sans Mono", monospace;
+  font-style: italic;
+  color: white;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  line-height: 2rem;
+}
+
 .nav-item {
-  margin: 1rem;
+  margin: 3rem;
+}
+
+.grid--container {
+  display: grid;
+  grid-template-columns: repeat(1, 0.2fr);
+  justify-content: left;
+  margin-right: 2rem;
 }
 
 .container {
   margin: 0;
   padding: 0;
+}
+
+.text-find {
+  margin-top: 2rem;
 }
 
 .text-align-center {
@@ -33,10 +58,13 @@ body {
 
 .main__title {
   padding: 3rem;
-  font-size: 5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-left: 5rem;
 }
 
 .span--green {
@@ -58,11 +86,19 @@ body {
   font-weight: bold;
 }
 
-.index__image {
-  width: 24rem;
+.section__image {
+  width: 34rem;
   height: 28rem;
-  margin: 0.5rem;
-  padding: 2rem;
+  margin: 2rem;
+}
+
+.image__description {
+  margin: 0;
+  font-family: "Noto Sans Mono", monospace;
+  font-style: italic;
+  color: white;
+  line-height: 2rem;
+  padding: 1rem 0rem;
 }
 
 .main__text {
@@ -115,9 +151,58 @@ main {
   justify-content: center;
 }
 
+.bus:hover {
+  opacity: 0.3;
+}
+
+.span-green {
+  color: green;
+  opacity: 3rem;
+}
+
+.span-red {
+  color: red;
+}
+
+.span-blue {
+  color: blue;
+}
+
 @media (min-width: 768px) {
   .navbar-toggler {
     display: none;
+  }
+
+  .main__title {
+    padding: 3rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .iframe-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .iframe {
+    margin-left: 20rem;
+    margin-top: 2rem;
+  }
+
+  .grid--container {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+  }
+
+  .main__text-colectivos {
+    font-family: "Noto Sans Mono", monospace;
+    font-style: italic;
+    color: white;
+    margin-top: 15rem;
+    margin-left: 2rem;
+    line-height: 2rem;
   }
 }
 
@@ -125,5 +210,44 @@ main {
   .image__position {
     display: flex;
     justify-content: center;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  .section__image {
+    width: 20rem;
+  }
+  .grid--container {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr);
+    justify-content: center;
+  }
+  .main__title {
+    padding: 3rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+  }
+  .iframe-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__text-colectivos {
+    font-family: "Noto Sans Mono", monospace;
+    font-style: italic;
+    color: white;
+    margin-top: 15rem;
+    margin-left: 2rem;
+    line-height: 2rem;
+  }
+
+  .iframe {
+    margin-left: 5rem;
+  }
+  .aside {
   }
 }

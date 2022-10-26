@@ -4,52 +4,220 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
     <link
       rel="shortcut icon"
       href="Imagenes/logoipsum-247.svg"
       type="image/x-icon"
     />
+    <!-- FONTAWESOME -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
     <title>Nosotros</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
-      <nav>
-        <img
-          src="Imagenes/307534090_5607060192650845_2942735155488563568_n.jpg"
-          alt=""
-        />
-        Instituto Kandel
-        <div>
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="cursos.html">Cursos</a></li>
-            <li><a href="novedades.html">Novedades</a></li>
-            <li><a href="contactanos.html">Contáctanos</a></li>
-          </ul>
+      <div class="bg-dark">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-center">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link span--green"
+                      aria-current="page"
+                      href="index.html"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link span--yellow" href="nosotros.html"
+                      >Nosotros</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link span--green" href="cursos.html"
+                      >Cursos</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link span--yellow" href="novedades.html"
+                      >Novedades</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link span--green" href="contactanos.html"
+                      >Contáctanos</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
     <main>
       <section>
-        <div>
+        <div class="text-center">
           <!-- IMAGEN DE FONDO -->
-          <img src="Imagenes/fondo.jpg" alt="" />
-          <h1>
-            La educación es el arma mas poderosa que puedes usar para cambiar el
-            mundo
+
+          <h1 class="main__title">
+            <span class="span--green">La educación</span>
+            <span class="span--yellow">es el arma</span>
+            <span class="span--green">mas poderosa</span>
+            <span class="span--yellow">que puedes usar</span>
+            <span class="span--green">para cambiar</span>
+            <span class="span--yellow">el mundo</span>
           </h1>
+          <div>
+            <h2 class="main__text display-inline">
+              ¡Conoce a nuestras profesoras!
+            </h2>
+          </div>
         </div>
       </section>
       <section>
-        <article>
+        <article class="grid--container text-center">
+          <!-- LAS IMAGENES FUERON SACADAS DE GOOGLE Y LOS NOMBRES FUERON CREADOS AL AZAR. -->
           <div>
-            ¿Dónde encontrarnos?
+            <h3>
+              <span class="span--green">Morena</span>
+              <span class="span--yellow">Carbajal</span>
+            </h3>
+            <img
+              class="section__image"
+              src="Imagenes/profesora1.jpg"
+              alt="Morena Carbajal"
+            />
+            <p class="image__description text-center">
+              Maestra jardinera por muchos años ¡Y ahora se dedica a enseñarle
+              inglés a los más pequeños!.
+            </p>
+          </div>
+          <div>
+            <h3 class="nombre-profe">
+              <span class="span--green">Veronica</span>
+              <span class="span--yellow">Gutiérrez </span>
+            </h3>
+
+            <img
+              class="section__image"
+              src="Imagenes/profesora2.jpg"
+              alt="Veronica Gutierrez"
+            />
+            <p class="image__description">
+              Profesora de ingles tanto de adulto como de adolescentes. ¡Además
+              es traductora pública y enseña por vocación!
+            </p>
+          </div>
+          <div>
+            <h3>
+              <span class="span--green">Daniela</span>
+              <span class="span--yellow">Rodriguez</span>
+            </h3>
+            <img
+              class="section__image"
+              src="Imagenes/profesora3.jpg"
+              alt="Daniela Rodriguez"
+            />
+            <p class="image__description">
+              Excelente profesora particular de Matemática, Física y Química.
+              ¡Además enseña inglés a los más jóvenes!
+            </p>
+          </div>
+          <div>
+            <h3>
+              <span class="span--green">Mariano</span>
+              <span class="span--yellow">Acosta </span>
+            </h3>
+            <img
+              class="section__image"
+              src="Imagenes/profesor4.jpg"
+              alt="Mariano Acosta"
+            />
+            <p class="image__description">
+              Nuestro profesor amado por los jóvenes y niños.
+              <span class="span--bold"
+                >¡Cuenta con amplia disponibilidad horaria!</span
+              >
+            </p>
+          </div>
+          <div>
+            <h3>
+              <span class="span--green">Silvia</span>
+              <span class="span--yellow">Parcas </span>
+            </h3>
+            <img
+              class="section__image"
+              src="Imagenes/profesora5.jpg"
+              alt="Silvia Parcas"
+            />
+            <p class="image__description">
+              Profesora de Inglés, Francés y Portugués. Ella asegura tener la
+              clave para aprender muchos idiomas en poco tiempo
+              <span class="span--gold">¿Quieres probar sus métodos?</span>
+            </p>
+          </div>
+          <div>
+            <h3>
+              <span class="span--green">Alexandre</span>
+              <span class="span--yellow">Cabanel</span>
+            </h3>
+            <img
+              class="section__image"
+              src="Imagenes/profesor6.jpg"
+              alt="Alexandre Cabanel"
+            />
+            <p class="image__description">
+              Vení a aprender Francés con nuestro experto en el idioma nacido en
+              Francia ¡Y con mucha pasión para enseñar a los más jovenes!
+            </p>
+          </div>
+        </article>
+        <section>
+          <h3 class="text-find">
+            <span class="span--green">¿Dónde</span>
+            <span class="span--yellow">encontrarnos?</span>
+          </h3>
+        </section>
+        <aside>
+          <div class="iframe-container">
             <iframe
+              class="iframe"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.745022457499!2d-58.460766684174814!3d-34.610608565371045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1cbf2498d1%3A0x1e2335d76d88e0b0!2sInstituto%20Kandel!5e0!3m2!1ses-419!2sar!4v1664779772940!5m2!1ses-419!2sar"
               width="600"
               height="450"
@@ -58,48 +226,37 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
-          <!-- LAS IMAGENES FUERON SACADAS DE GOOGLE Y LOS NOMBRES FUERON CREADOS AL AZAR. -->
-          <div>
-            ¡Conoce a nuestras profesoras!
-            <img src="Imagenes/profesora1.jpg" alt="" />
-            Morena Carbajal, Maestra jardinera por muchos años ¡Y ahora se
-            dedica a enseñarle inglés a los más pequeños!.
-          </div>
-          <div>
-            <img src="Imagenes/profesora2.jpg" alt="" />
-            Veronica Gutiérrez, Profesora de ingles tanto de adulto como de
-            adolescentes. ¡Además es traductora pública y enseña por vocación!
-          </div>
-          <div>
-            <img src="Imagenes/profesora3.jpg" alt="" />
-            Daniela Rodriguez, excelente profesora particular de Matemática,
-            física y química. ¡Además enseña inglés a los más jóvenes!
-          </div>
-        </article>
-        <aside>
-          <div>
-            <p>Colectivos que te dejan cerca de nosotros: 106, 113, 124, 84.</p>
+            <h3 class="main__text-colectivos">
+              Colectivos que te dejan cerca de nosotros:
+              <span class="bus span-green">106</span>
+              <span class="bus span-blue">113</span>
+              <span class="bus span-red">124</span>
+              84
+            </h3>
           </div>
         </aside>
       </section>
     </main>
     <!-- Footer -->
     <footer>
-      <div>
-        ¡Seguinos en nuestras redes sociales!
-        <ul>
-          <li>
-            <a href="https://www.instagram.com/instituto__kandel/"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/profile.php?id=100086278759011"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </li>
-        </ul>
+      <div class="footer__main row">
+        <h3 class="footer__text text-center">
+          ¡Seguinos en nuestras redes sociales!
+        </h3>
+        <div class="row">
+          <ul class="footer__list">
+            <li>
+              <a href="https://www.instagram.com/instituto__kandel/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100086278759011"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <!-- SCRIPT  -->
