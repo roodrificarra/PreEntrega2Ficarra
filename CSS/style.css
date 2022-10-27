@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+hr {
+  margin: 0;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -17,6 +22,25 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 6rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.boton-aqui {
+  padding: 5px 20px;
+}
+
+.aqui {
+  color: black;
+  text-decoration: none;
+  padding: 5px;
 }
 
 .aqui:hover {
@@ -30,8 +54,12 @@ body {
   line-height: 2rem;
 }
 
+.nav-item a {
+  display: inline-block;
+}
+
 .nav-item {
-  margin: 1rem;
+  margin: 0.3rem;
 }
 
 .container {
@@ -59,7 +87,14 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  justify-content: center;
+}
+
+.main__title-con {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin: 0.5rem;
 }
 
 .text-font {
@@ -77,6 +112,21 @@ body {
   margin: 2rem 0;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex p {
+  text-align: left;
+  padding: 15px;
+}
+
+.text-white h4 {
+  margin: 10px;
+}
+
 .main-title {
   color: white;
   padding: 3rem;
@@ -88,6 +138,16 @@ body {
   margin-top: 1rem;
   text-align: center;
 }
+
+/* SPAN */
+.span-green {
+  color: green;
+  opacity: 3rem;
+}
+
+.span-blue {
+  color: blue;
+}
 .span--green {
   color: green;
 }
@@ -96,6 +156,9 @@ body {
   color: yellow;
 }
 
+.span-red {
+  color: red;
+}
 .span--yellow:hover {
   color: green;
 }
@@ -137,10 +200,7 @@ body {
   line-height: 2rem;
 }
 
-.aqui:hover {
-  color: yellow;
-  opacity: 1rem;
-}
+/* FOOTER */
 
 .footer__main {
   font-size: 1.5rem;
@@ -183,17 +243,11 @@ main {
   opacity: 0.3;
 }
 
-.span-green {
-  color: green;
-  opacity: 3rem;
-}
-
-.span-red {
-  color: red;
-}
-
-.span-blue {
-  color: blue;
+.btn,
+button {
+  background: linear-gradient(to right, green, yellow);
+  color: black;
+  padding: 5px 10px;
 }
 
 .main__text--c {
@@ -207,13 +261,8 @@ main {
   text-align: center;
 }
 
-.btn {
-  background-color: green;
-  color: yellow;
-}
-
 .btn:hover {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 /* FORM */
@@ -245,6 +294,11 @@ textarea {
   border: none;
 }
 
+input,
+textarea:focus {
+  outline: none;
+}
+
 textarea {
   min-height: 100px;
   max-height: 200px;
@@ -255,10 +309,69 @@ textarea {
   background: #31384a;
   color: #fff;
   padding: 20px;
+  width: 100%;
 }
 
 #boton:hover {
   cursor: pointer;
+}
+
+/* Animacion botón */
+
+.boton-contacto {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e0dada;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+.boton-contacto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+.boton-contacto:hover {
+  color: #e8e8e8;
+}
+
+.boton-contacto:hover::before {
+  width: 100%;
+}
+
+img {
+  animation: fadeIn 1.5s ease;
+  transition: all 50ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+
+  10% {
+    opacity: 1;
+    filter: brightness(2) blur(5px);
+  }
 }
 
 @media (min-width: 768px) {
@@ -307,6 +420,8 @@ textarea {
 
   .card__image {
     height: 15rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
   }
 
   main {
@@ -365,5 +480,14 @@ textarea {
 
   form {
     width: 50%;
+  }
+
+  .main__title-con {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin: 0.5rem;
+    padding: 2rem;
   }
 }
