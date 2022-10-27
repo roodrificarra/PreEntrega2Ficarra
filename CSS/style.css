@@ -39,6 +39,12 @@ body {
   padding: 0;
 }
 
+.cont {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 767px;
+}
+
 .text-find {
   margin-top: 2rem;
 }
@@ -210,6 +216,51 @@ main {
   opacity: 0.3;
 }
 
+/* FORM */
+
+form {
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  margin-top: 3rem;
+  border-radius: 7px;
+  margin-bottom: 3rem;
+  width: 90%;
+}
+
+form h2 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-size: 17px;
+  border: none;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#boton {
+  background: #31384a;
+  color: #fff;
+  padding: 20px;
+}
+
+#boton:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .navbar-toggler {
     display: none;
@@ -310,5 +361,9 @@ main {
   .cont {
     margin: 0 auto;
     max-width: 1200px;
+  }
+
+  form {
+    width: 50%;
   }
 }

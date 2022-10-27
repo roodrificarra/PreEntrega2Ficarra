@@ -91,52 +91,50 @@
     </header>
     <main>
       <section>
-        <div>
-          <!-- IMAGEN DE FONDO -->
-          <img src="Imagenes/fondo.jpg" alt="" />
+        <div class=".cont">
           <h1>
-            ¡Estar comunicados es la mejor manera de aprender! Ponte en contacto
-            con nosotros ingresando tus datos.
+            <span class="span--green">¡Estar comunicados</span>
+            <span class="span--yellow">es la mejor manera</span>
+            <span class="span--green">de aprender!</span>
+            <span class="span--yellow">Ponte en contacto con nosotros</span>
+            <span class="span--green">ingresando tus datos!</span>
           </h1>
-        </div>
-      </section>
-      <section>
-        <div>
-          <form action="">
-            <div>Nombre <input type="text" name="Nombre" id="nombre" /></div>
-            <div>
-              Apellido <input type="text" name="Apellido" id="Apellido" />
-            </div>
-            <div>Mail<input type="text" name="Mail" id="Mail" /></div>
-            <div>
-              Teléfono<input type="number" name="Telefono" id="Telefono" />
-            </div>
-            <div>
-              Acepto recibir promociones al correo electrónico
-              <input type="checkbox" name="promociones" id="" />
-            </div>
-            <div>
-              <button type="submit">Enviar</button>
-            </div>
-          </form>
+          <div>
+            <form action="">
+              <h2>CONTACTO</h2>
+              <input type="text" name="Nombre" placeholder="Nombre" />
+              <input type="text" name="Correo" placeholder="Correo" />
+              <input type="text" name="Teléfono" placeholder="Telefono" />
+              <textarea
+                name="Mensaje"
+                placeholder="Escriba Aquí su mensaje"
+              ></textarea>
+              <input type="button" value="ENVIAR" id="boton" />
+            </form>
+          </div>
         </div>
       </section>
     </main>
+    <!-- Footer -->
     <footer>
-      <div>
-        ¡Seguinos en nuestras redes sociales!
-        <ul>
-          <li>
-            <a href="https://www.instagram.com/instituto__kandel/"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/profile.php?id=100086278759011"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </li>
-        </ul>
+      <div class="footer__main row">
+        <h3 class="footer__text text-center">
+          ¡Seguinos en nuestras redes sociales!
+        </h3>
+        <div class="row">
+          <ul class="footer__list">
+            <li>
+              <a href="https://www.instagram.com/instituto__kandel/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100086278759011"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <!-- SCRIPT  -->
