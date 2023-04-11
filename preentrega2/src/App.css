@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.cart {
+  width: 30px;
+
+  cursor: pointer;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: rgb(83, 182, 63);
+}
+button:hover {
+  border-color: #646cff;
+  background-color: rgb(38, 133, 19);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.main_title {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.brand_name {
+  font-size: 40px;
+  margin: 0 auto;
+  left: 20px;
+  position: absolute;
+}
